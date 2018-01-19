@@ -37,6 +37,7 @@ namespace WordUnscrambler
                 }
 
                 var continueDecision = string.Empty;
+
                 do
                 {
                     Console.Write("Do you want to continue? (Y/N): ");
@@ -75,7 +76,7 @@ namespace WordUnscrambler
             {
                 foreach (var matchedWord in matchedWords)
                 {
-                    Console.WriteLine("Match found for [0]: {1}", matchedWord.ScrambledWord, matchedWord.Word);
+                    Console.WriteLine("Match found for {0}: {1}", matchedWord.ScrambledWord, matchedWord.Word);
                 }
             }
             else
